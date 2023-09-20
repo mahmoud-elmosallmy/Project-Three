@@ -1,0 +1,119 @@
+/* Global */
+.side-content {
+  display: flex;
+}
+.table {
+  padding: 20px;
+}
+.shadow {
+  box-shadow: 1px 1px 10px 1px #cdc9c9;
+}
+/* top-bar */
+.top-bar {
+  position: sticky;
+  top: 0px;
+  background-color: white;
+}
+
+/* side-bar */
+.side-bar {
+  width: 20%;
+  padding: 20px;
+  border-right: 1px solid #cdc9c9;
+  display: flex;
+  flex-direction: column;
+}
+.item-link {
+  background-color: white;
+  padding: 10px 20px;
+  color: #86b7fe;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid #86b7fe;
+  font-weight: bold;
+  text-decoration: none;
+  margin-bottom: 4px;
+}
+.item-link:hover {
+  background-color: #86b7fe;
+  border: 1px solid #86b7fe;
+  color: white;
+}
+.active {
+  background-color: #86b7fe;
+  border-radius: 12px;
+  color: white;
+}
+.side-bar .item-link .move {
+  margin-right: 8px;
+}
+
+/* Content */
+table {
+  width: 100%;
+  padding: 20px;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+tr:nth-child(even) {
+  background: #f1f7f8;
+}
+table thead th {
+  width: calc(100% / 3);
+  padding: 4px 10px;
+  background-color: #6eaabb;
+  color: white;
+}
+table tbody {
+  text-align: center;
+}
+table thead th,
+table tbody tr td {
+  border: 1px solid #74afb9;
+  padding: 0.75rem;
+  text-align: center;
+}
+table tbody tr td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+table tbody tr td i {
+  cursor: pointer;
+  padding: 0 15px;
+}
+table tbody tr td .update {
+  color: #74afb9;
+}
+table tbody tr td .delete {
+  color: red;
+}
+
+/* Update And Create */
+/* .parent-update {
+  width: 100%;
+  box-shadow: none
+} */
+
+.createuser form{
+  width: 100%;
+  box-shadow: none;
+}
+.createuser form input {
+  border: 1px solid #cccccc;
+  box-shadow: none;
+}
+.createuser form button {
+  outline: none;
+  border: none;
+  background-color: #86b7fe;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .3s;
+  border: 2px solid white;
+  font-weight: bold;
+  width: 100%;
+}
